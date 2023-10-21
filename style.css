@@ -1,0 +1,437 @@
+/* Add your improved CSS styles here. Use the previous CSS as a starting point. */
+/* You can fine-tune and customize styles as per your preferences. */
+
+/* Add your improved CSS styles here. Use the previous CSS as a starting point. */
+/* You can fine-tune and customize styles as per your preferences. */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background: #fff;
+}
+
+header.sticky {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    color: #111;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    margin: 0 15px;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Navigation Toggle Styles */
+.toggle {
+    display: none;
+}
+
+.toggle i {
+    font-size: 20px;
+    color: #111;
+    cursor: pointer;
+}
+
+.toggle.active i {
+    color: #111;
+}
+
+/* Banner Styles */
+.banner {
+    background: linear-gradient(120deg, #a74c97, #1468c4);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 100px 100px;
+    min-height: 100vh;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner h2 span {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #fff;
+    padding: 100px;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.about .content {
+    display: flex;
+    align-items: center;
+}
+
+.about .contentBx {
+    flex: 1;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about .w50 {
+    flex: 1;
+    text-align: center;
+}
+
+.imgabout {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Services Section Styles */
+.services {
+    background-color: #f0f0f0;
+    padding: 100px;
+}
+
+.services h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.services .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .serviceBx {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.services .serviceBx:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.services .serviceBx img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.services .serviceBx h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+}
+
+.services .serviceBx p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Donate Section Styles */
+.donate {
+    background-color: #1468c4;
+    color: #fff;
+    padding: 100px;
+}
+
+.donate h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.donate .content {
+    display: flex;
+    align-items: center;
+}
+
+.donate .donateBx {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.6;
+    padding-right: 30px;
+}
+
+.donation {
+    background: #f3f021;
+    color: #111;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #1468c4;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.donation:hover {
+    background: #f3f021;
+    color: #111;
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Feedback Section Styles */
+.work {
+    background: linear-gradient(120deg, #a74c97, #1468c4);
+    padding: 100px;
+    color: #fff;
+}
+
+.work h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.work .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work .workBx {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.work .workBx:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.work .workBx img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.work .workBx h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+    margin: 10px 0;
+}
+
+/* Contact Section Styles */
+.contact {
+    background: #fff;
+    padding: 100px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .contactInfo {
+    flex: 1;
+    font-size: 18px;
+}
+
+.contact .contactInfoBx {
+    margin-top: 20px;
+}
+
+.contact .contactInfoBx .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact .contactInfoBx .box .icon {
+    font-size: 24px;
+    color: #1468c4;
+    min-width: 40px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.contact .contactInfoBx .box .text {
+    flex: 1;
+}
+
+.contact .contactInfoBx .box .text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+/* Contact Form Styles */
+.contact .formBx {
+    flex: 1;
+}
+
+.contact .formBx form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .formBx form h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.contact .formBx form input,
+.contact .formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+    color: #111;
+    border-radius: 5px;
+}
+
+.contact .formBx form input::placeholder,
+.contact .formBx form textarea::placeholder {
+    color: #555;
+}
+
+.contact .formBx form input[type="submit"] {
+    max-width: 150px;
+    background: #1468c4;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact .formBx form input[type="submit"]:hover {
+    background: #fff;
+    color: #1468c4;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+.copyright {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-top: 1px solid #555;
+}
+
+.copyright p {
+    margin: 10px 0;
+}
+
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007BFF; 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
